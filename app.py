@@ -1,16 +1,16 @@
 import streamlit as st
 import requests
-# from streamlit_lottie import st_lottie
+from streamlit_lottie import st_lottie
 from PIL import Image
 
 st.set_page_config(page_title="Ayomide's Portfolio", page_icon=":briefcase:", layout = "wide")
 
 #functions
-# def load_lottie(url):
-#     r = requests.get(url)
-#     if r.status_code != 200:
-#         return None
-#     return r.json()
+def load_lottie(url):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
 
 def css(file_name):
     with open(file_name) as f:
@@ -20,7 +20,7 @@ css("style/style.css")
 
 #Assets
 
-# lottie_anim = load_lottie("https://lottie.host/389d64e9-b60e-4d28-9853-9fdea724fcc0/ogmxsE9Eyd.json")
+lottie_anim = load_lottie("https://lottie.host/389d64e9-b60e-4d28-9853-9fdea724fcc0/ogmxsE9Eyd.json")
 
 img_ryan_gpt = Image.open("images/RyanGPT.png")
 img_algo_vis = Image.open("images/AlgoVis.png")
