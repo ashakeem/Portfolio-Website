@@ -1,0 +1,31 @@
+
+a{
+    display: inline-block; 
+    text-align: center; 
+    padding: 10px 20px; 
+    background-color: #007BFF; 
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold; 
+    border-radius: 5px; 
+    transition: background-color 0.3s;
+}
+
+.git{
+    background-color: #4078c0;
+}
+
+.l{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a:hover{
+    background: transparent;
+}
+
+
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
